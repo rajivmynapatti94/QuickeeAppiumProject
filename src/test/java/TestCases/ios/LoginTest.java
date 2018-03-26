@@ -18,7 +18,7 @@ public class LoginTest extends TestBase {
 		ls= new LoginScreenTest(driver);
 		
 		ls.LoginWithValidCredentials("shivani.gor@indianic.com", "test123");
-		log.debug("User is succesfully login");
+		log.debug("User is login Successfully");
 		
 	}
 	

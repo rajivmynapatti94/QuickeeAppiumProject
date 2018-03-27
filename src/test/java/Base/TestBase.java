@@ -12,6 +12,7 @@ import Screens.ios.NewGetStartedScreen;
 import Utils.CommonUtils;
 import io.appium.java_client.ios.IOSDriver;
 
+
 public class TestBase {
 	
 	public static IOSDriver driver;
@@ -19,6 +20,7 @@ public class TestBase {
 	public GetStartedScreen gs;
 	public LoginScreenTest ls;
 	public NewGetStartedScreen Ngs;
+	
 	public static Logger log= Logger.getLogger("devpinoyLogger");
 	
 	@BeforeSuite

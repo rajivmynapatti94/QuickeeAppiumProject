@@ -2,20 +2,20 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Appium Framework" duration-ms="20855" started-at="2018-03-24T13:31:43Z" finished-at="2018-03-24T13:32:04Z">
+  <suite name="Appium Framework" duration-ms="15728" started-at="2018-03-27T05:37:42Z" finished-at="2018-03-27T05:37:58Z">
     <groups>
     </groups>
-    <test name="Login Test" duration-ms="20855" started-at="2018-03-24T13:31:43Z" finished-at="2018-03-24T13:32:04Z">
+    <test name="Login Test" duration-ms="15728" started-at="2018-03-27T05:37:42Z" finished-at="2018-03-27T05:37:58Z">
       <class name="TestCases.ios.LoginTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:TestCases.ios.LoginTest@2eda0940]" name="setUp" is-config="true" duration-ms="19287" started-at="2018-03-24T13:31:23Z" finished-at="2018-03-24T13:31:43Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:TestCases.ios.LoginTest@8b87145]" name="setUp" is-config="true" duration-ms="19646" started-at="2018-03-27T05:37:23Z" finished-at="2018-03-27T05:37:42Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="Openapp()[pri:0, instance:TestCases.ios.LoginTest@2eda0940]" name="Openapp" duration-ms="20680" started-at="2018-03-24T13:31:43Z" finished-at="2018-03-24T13:32:04Z">
+        <test-method status="PASS" signature="Openapp()[pri:0, instance:TestCases.ios.LoginTest@8b87145]" name="Openapp" duration-ms="15650" started-at="2018-03-27T05:37:42Z" finished-at="2018-03-27T05:37:58Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Openapp -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:TestCases.ios.LoginTest@2eda0940]" name="tearDown" is-config="true" duration-ms="445" started-at="2018-03-24T13:32:05Z" finished-at="2018-03-24T13:32:06Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:TestCases.ios.LoginTest@8b87145]" name="tearDown" is-config="true" duration-ms="363" started-at="2018-03-27T05:38:03Z" finished-at="2018-03-27T05:38:04Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

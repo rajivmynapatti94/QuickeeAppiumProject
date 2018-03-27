@@ -13,7 +13,7 @@ public class LoginTest extends TestBase {
 		
 		gs = new GetStartedScreen(driver);
 		gs.goToLoginScreen();
-		log.debug("Successfuly open the login screen");
+		log.debug("Successfully open the login screen");
 		
 		ls= new LoginScreenTest(driver);
 		

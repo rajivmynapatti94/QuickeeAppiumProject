@@ -2,7 +2,8 @@ package Base;
 
 import java.io.IOException;
 
-import org.apache.log4j.Logger;
+import org.apache.log4j.*;
+
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
 
@@ -22,6 +23,8 @@ public class TestBase {
 	public NewGetStartedScreen Ngs;
 	
 	public static Logger log= Logger.getLogger("devpinoyLogger");
+	
+//	public static Logger log = LogManager.getLogger("devpinoyLogger");
 	
 	@BeforeSuite
 	public void setUp() throws IOException{

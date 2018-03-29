@@ -21,7 +21,7 @@ public class ScreenBase {
 	}
 	
 	public void hidekeyboard(){
-	
+	//Keyboard will hide
 		driver.hideKeyboard();
 
 	}

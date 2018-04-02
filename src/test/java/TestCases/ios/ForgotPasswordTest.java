@@ -15,7 +15,9 @@ public class ForgotPasswordTest extends TestBase{
 		
 		FPs=new ForgotPasswordScreen(driver);
 		
-		FPs.forgotPasswordTest("shivani.gor@indianic.com");
+		//FPs.ValidCredentials("shivani.gor@indianic.com");
+		
+		//FPs.InvalidCredentials("Test@grr.la");
 	}
 	
 

@@ -23,18 +23,33 @@ public class ForgotPasswordScreen extends ScreenBase{
 	@iOSFindBy(id="Cancel")
 	public MobileElement cancelButton;
 	
-	public ForgotPasswordScreen forgotPasswordTest(String email) throws InterruptedException{
+	public ForgotPasswordScreen ValidCredentials(String Valid_email) throws InterruptedException{
 		
 		forgotPasswordLink.click();
 		
 		Thread.sleep(3000);
 		
-		emailTextField.sendKeys(email);
+		emailTextField.sendKeys(Valid_email);
 		
 		//sendButton.click();
 		
 		cancelButton.click();
 		
+		return this;
+	}
+	
+	public ForgotPasswordScreen InvalidCredentials(String Invalid_email) throws InterruptedException{
+		
+		forgotPasswordLink.click();
+		
+		Thread.sleep(3000);
+		
+		emailTextField.sendKeys(Invalid_email);
+		
+		sendButton.click();
+	//As soon as it click on Sendbutton then a dialog will occur stating that "User email does not exit"--
+		//--and user will be not able to click on cancel button untill unless he/she tap on "OK" button in dialog
+		cancelButton.click();
 		return this;
 	}
 

@@ -3,6 +3,7 @@ package Screens.ios;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
 
 import Base.ScreenBase;
 import io.appium.java_client.ios.IOSDriver;
@@ -27,7 +28,7 @@ public class GetStartedScreen extends ScreenBase{
 	@iOSFindBy(id="Login")
 	public WebElement login;
 	
-	public GetStartedScreen goToLoginScreen() throws InterruptedException{
+	public GetStartedScreen goToLoginScreen() {
 		
 
 		System.out.println("Waiting for Dialogs");
@@ -40,7 +41,7 @@ public class GetStartedScreen extends ScreenBase{
 	        System.err.println("no alert visible after 10 sec.");
 	    }
 	    
-	    //driver.findElementByName("Login").click();
+/*Assert.assertTrue(isElementPresent(login), "Element is not found");*/
 	    login.click();
 		return this;
 		

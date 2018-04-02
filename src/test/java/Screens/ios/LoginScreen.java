@@ -9,9 +9,9 @@ import io.appium.java_client.ios.IOSDriver;
 import io.appium.java_client.pagefactory.iOSFindBy;
 
 
-public class LoginScreenTest extends ScreenBase {
+public class LoginScreen extends ScreenBase {
 	
-public LoginScreenTest(IOSDriver driver){
+public LoginScreen(IOSDriver driver){
 		
 		super(driver);
 	}
@@ -47,7 +47,7 @@ public	WebElement backButton;
 	public	WebElement OtherText;
 
 	
-	public LoginScreenTest LoginWithValidCredentials(String uname, String pass) throws InterruptedException{
+	public LoginScreen LoginWithValidCredentials(String uname, String pass) throws InterruptedException{
 	
 		Thread.sleep(5000);
 	email.sendKeys(uname);

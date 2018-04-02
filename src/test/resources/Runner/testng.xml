@@ -8,7 +8,8 @@
   <test thread-count="5" name="Login Test">
   
     <classes>
-      <class name="TestCases.ios.LoginTest"/>
+      <class name="TestCases.ios.LoginTest"/> 
+    <!--    <class name="TestCases.ios.ForgotPasswordTest"/> -->
     </classes>
     
   </test> <!-- Test -->

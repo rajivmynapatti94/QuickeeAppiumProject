@@ -4,7 +4,8 @@ import org.testng.annotations.Test;
 
 import Base.TestBase;
 import Screens.ios.GetStartedScreen;
-import Screens.ios.LoginScreenTest;
+import Screens.ios.LoginScreen;
+
 
 public class LoginTest extends TestBase {
 
@@ -15,7 +16,7 @@ public class LoginTest extends TestBase {
 		gs.goToLoginScreen();
 		log.debug("Successfully open the login screen");
 		
-		ls= new LoginScreenTest(driver);
+		ls= new LoginScreen(driver);
 		
 		ls.LoginWithValidCredentials("shivani.gor@indianic.com", "test123");
 		log.debug("User is login Successfully");

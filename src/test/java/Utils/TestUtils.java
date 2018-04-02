@@ -6,6 +6,7 @@ import java.util.Date;
 
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
+import org.testng.annotations.DataProvider;
 
 import com.google.common.io.Files;
 
@@ -15,6 +16,7 @@ public class TestUtils extends TestBase{
 	
 	public static String screenshotName;
 	public static String screenshotPath;
+	public ExcelReader excel;
 	
 	public static String captureScreenshot() throws IOException {
 	
@@ -31,7 +33,20 @@ public class TestUtils extends TestBase{
 
 		
 		} 
+	
+	@DataProvider
+	public Object[][] getData(String sheetName){
+		
+		int row=excel.getRowCount(sheetName);
+		int cells=excel.getColumnCount(sheetName);
+		
+		
+		
+		return null;
+		
 		
 	}
+		
+}
 
 

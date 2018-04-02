@@ -9,8 +9,11 @@ import org.testng.annotations.BeforeSuite;
 import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
 
+import Screens.ios.ForgotPasswordScreen;
 import Screens.ios.GetStartedScreen;
-import Screens.ios.LoginScreenTest;
+import Screens.ios.LoginScreen;
+
+
 import Screens.ios.NewGetStartedScreen;
 import Utils.CommonUtils;
 import Utils.ExtentManager;
@@ -22,8 +25,9 @@ public class TestBase {
 	public static IOSDriver driver;
 	public static String loadPropertyFile="iOS_Quickee.properties";
 	public GetStartedScreen gs;
-	public LoginScreenTest ls;
+	public LoginScreen ls;
 	public NewGetStartedScreen Ngs;
+	public ForgotPasswordScreen FPs;
 	
 	public static Logger log= Logger.getLogger("devpinoyLogger");
 	public ExtentReports rep = ExtentManager.getInstance();

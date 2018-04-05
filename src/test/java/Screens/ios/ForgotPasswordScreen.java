@@ -14,10 +14,11 @@ public class ForgotPasswordScreen extends ScreenBase{
 	@iOSFindBy(id="Forgot your password?")
 	public MobileElement forgotPasswordLink;
 	
-	@iOSFindBy(xpath="//XCUIElementTypeApplication[@name=\"Quickee\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeScrollView/XCUIElementTypeOther/XCUIElementTypeTextField")
+	//@iOSFindBy(xpath="//XCUIElementTypeApplication[@name=\"Quickee\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeScrollView/XCUIElementTypeOther/XCUIElementTypeTextField")
+@iOSFindBy(id="//*[@value=\"Enter your email address\"]")
 	public MobileElement emailTextField;
 	
-	@iOSFindBy(xpath="(//XCUIElementTypeButton[@name=\"Send\"])[1]")
+	@iOSFindBy(id="Send")
 	public MobileElement sendButton;
 	
 	@iOSFindBy(id="Cancel")
@@ -49,7 +50,7 @@ public class ForgotPasswordScreen extends ScreenBase{
 		sendButton.click();
 	//As soon as it click on Sendbutton then a dialog will occur stating that "User email does not exit"--
 		//--and user will be not able to click on cancel button untill unless he/she tap on "OK" button in dialog
-		cancelButton.click();
+		
 		return this;
 	}
 

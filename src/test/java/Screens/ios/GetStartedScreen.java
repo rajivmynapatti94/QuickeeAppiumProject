@@ -19,10 +19,10 @@ public class GetStartedScreen extends ScreenBase{
 
 	
 
-	@iOSFindBy(xpath="//XCUIElementTypeButton[@name=\"Get Started\"]")
+	@iOSFindBy(id="Get Started")
 	public WebElement getStarted;
 	
-	@iOSFindBy(xpath="//XCUIElementTypeButton[@name=\"What’s Quickee’s purpose?\"]")
+	@iOSFindBy(id="What’s Quickee’s purpose?")
 	public WebElement what_Quickee_Response_link;
 	
 	@iOSFindBy(id="Login")

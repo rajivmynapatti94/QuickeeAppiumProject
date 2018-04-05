@@ -1,16 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Appium Framework">
+<suite name="Appium Framework"  verbose="1">
 
 <listeners>
 	<listener class-name="Listeners.CustomListeners"></listener>
 </listeners>
-  <test thread-count="5" name="Login Test">
+  
+ <test thread-count="5" name="Login Test">
   
     <classes>
-      <class name="TestCases.ios.LoginTest"/> 
-    <!--    <class name="TestCases.ios.ForgotPasswordTest"/> -->
+	<class name="TestCases.ios.LoginTest"> 
+	<methods>
+        <include name="Openapp" />
+        <include name="GetLogout" />
+        <include name="RecoverYourPassword" />
+      </methods>
+     </class>
     </classes>
-    
-  </test> <!-- Test -->
+  </test>
 </suite> <!-- Suite -->

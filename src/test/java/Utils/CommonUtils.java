@@ -54,6 +54,7 @@ public class CommonUtils {
 		capabilities.setCapability(MobileCapabilityType.PLATFORM_VERSION, CommonUtils.PLATFORM_VERSION);
 		capabilities.setCapability(MobileCapabilityType.AUTOMATION_NAME, CommonUtils.AUTOMATION_INSTRUMENTATION);
 		capabilities.setCapability(MobileCapabilityType.APP, CommonUtils.APPLICATION_APP);
+		//capabilities.setCapability(MobileCapabilityType.APP, "/Users/indianic/Downloads/Quickee 2.app");
 		capabilities.setCapability(MobileCapabilityType.UDID, CommonUtils.UDID);
 		
 		

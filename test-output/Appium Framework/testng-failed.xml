@@ -1,13 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Appium Framework]">
+  <listeners>
+    <listener class-name="Listeners.CustomListeners"/>
+  </listeners>
   <test thread-count="5" name="Login Test(failed)">
     <classes>
       <class name="TestCases.ios.LoginTest">
         <methods>
+          <include name="Openapp"/>
           <include name="setUp"/>
-          <include name="init"/>
-          <include name="LginTest"/>
+          <include name="RecoverYourPassword"/>
+          <include name="GetLogout"/>
           <include name="tearDown"/>
         </methods>
       </class> <!-- TestCases.ios.LoginTest -->

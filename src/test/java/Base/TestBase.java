@@ -3,6 +3,7 @@ package Base;
 import java.io.IOException;
 
 import org.apache.log4j.Logger;
+import org.openqa.selenium.Dimension;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
 
@@ -11,6 +12,7 @@ import com.relevantcodes.extentreports.ExtentTest;
 
 import Screens.ios.ForgotPasswordScreen;
 import Screens.ios.GetStartedScreen;
+import Screens.ios.HomeScreen;
 import Screens.ios.LoginScreen;
 
 
@@ -24,12 +26,14 @@ public class TestBase {
 	
 	public static IOSDriver driver;
 	public static String loadPropertyFile="iOS_Quickee.properties";
+	
 	public GetStartedScreen gs;
 	public LoginScreen ls;
 	public NewGetStartedScreen Ngs;
 	public ForgotPasswordScreen FPs;
+	public HomeScreen Hs;
 	
-	public static Logger log= Logger.getLogger("devpinoyLogger");
+	public Logger log= Logger.getLogger("devpinoyLogger");
 	public ExtentReports rep = ExtentManager.getInstance();
 	public static ExtentTest test;
 	
@@ -53,6 +57,19 @@ public class TestBase {
 			
 			
 		}
+		
+	}
+	public void MethodSwipeUp(int durations){
+		
+		Dimension	size = driver.manage().window().getSize();
+		int height=size.getHeight();
+		int width=size.getWidth();
+		 int startx= width/2;
+		int starty=(int)(height * 0.60);
+		
+		int endy=(int)(height *0.10);
+		
+		driver.swipe(startx, starty, startx, endy, durations);
 		
 	}
 
